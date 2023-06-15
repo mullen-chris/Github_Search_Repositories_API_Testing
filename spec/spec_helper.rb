@@ -4,7 +4,7 @@ require 'openssl'
 require 'json'
 
 # Authenticated Users get a larger rate limit
-PAT = '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'
+PAT = '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'
 
 def request_API_HTTParty(url = 'https://api.github.com/search/repositories?q=Github')
 	url.sub!('https://', "https://#{PAT}@")
